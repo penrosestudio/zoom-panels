@@ -47,11 +47,18 @@ body.zoomed-out {
 	}
 	// Set zoom-in context positions
 	.context {
+
 	//	&:nth-child(1) { transform: translate($gutterWidth,10%); }
 		&:nth-child(2) { transform: translate($gutterZoomedWidth,0%); }
 		&:nth-child(3) { transform: translate($gutterZoomedWidth * 2,0%); }
 		&:nth-child(4) { transform: translate($gutterZoomedWidth * 3,0%); }
 		&:nth-child(5) { transform: translate($gutterZoomedWidth * 4,0%); }
+
+		&:hover {
+			transform: scale(1.05);	
+			transform-origin: -14% 50%;
+		}
+
 	}
 }
 
@@ -108,6 +115,7 @@ body.section-5 {
 	transform: translate(0%,0%);
 	// transform: scale(1) translate(0,0);
 	-webkit-transition: all 500ms ease;
+	cursor: pointer;
 } 
 
 .wrapper {
